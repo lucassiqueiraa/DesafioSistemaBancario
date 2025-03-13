@@ -1,24 +1,38 @@
-📌 Criando um Sistema Bancário com Python
-🚀 Este projeto faz parte da trilha de formação em Python da DIO e tem como objetivo desenvolver um sistema bancário simples utilizando Python. Durante o desenvolvimento, são aplicados conceitos essenciais como estruturas condicionais, loops, manipulação de strings e controle de fluxo.
+# 📌 Criando um Sistema Bancário com Python
 
-📖 Sobre o Desafio
-Este projeto tem como objetivo simular um sistema bancário, permitindo aos usuários realizarem operações como:
-✅ Depósito 💰
-✅ Saque 💸
-✅ Exibição de extrato 📜
+🚀 **Este projeto** faz parte da trilha de formação em Python da DIO e tem como objetivo desenvolver um sistema bancário simples utilizando Python. Durante o desenvolvimento, são aplicados conceitos essenciais como estruturas condicionais, loops, manipulação de strings e controle de fluxo.
 
-Além de consolidar conhecimentos em Python, este desafio ajuda a desenvolver habilidades de lógica de programação e boas práticas no desenvolvimento de software.
+## 📖 Sobre o Desafio
 
-🛠️ Tecnologias Utilizadas
-✔️ Python 3
+Este projeto tem como objetivo **simular um sistema bancário**, permitindo aos usuários realizarem operações como:
 
-📌 Funcionalidades
-📌 Depósito: O usuário informa o valor e ele é adicionado ao saldo.
-📌 Saque: O usuário pode sacar um valor desde que:
+- ✅ **Depósito** 💰
+- ✅ **Saque** 💸
+- ✅ **Exibição de extrato** 📜
 
-Não ultrapasse o saldo disponível;
-Não ultrapasse o limite de saque por transação;
-Não ultrapasse o número máximo de saques diários.
-📌 Extrato: Exibe todas as transações realizadas e o saldo atual.
-📌 Sair: Finaliza a execução do programa.
+Além de consolidar conhecimentos em Python, este desafio ajuda a desenvolver habilidades de **lógica de programação** e boas práticas no desenvolvimento de software.
 
+## 🛠️ Tecnologias Utilizadas
+
+- ✔️ **Python 3**
+
+## 📌 Funcionalidades
+
+- **Depósito**: O usuário informa o valor e ele é adicionado ao saldo.
+  
+- **Saque**: O usuário pode sacar um valor desde que:
+  - Não ultrapasse o saldo disponível;
+  - Não ultrapasse o limite de saque por transação;
+  - Não ultrapasse o número máximo de saques diários.
+
+- **Extrato**: Exibe todas as transações realizadas e o saldo atual.
+
+- **Sair**: Finaliza a execução do programa.
+
+---
+
+💡 **Boa prática**: Esse sistema serve como base para quem deseja entender como criar e gerenciar transações bancárias simples, aprimorando o uso de Python para resolver problemas práticos no cotidiano.
+
+---
+
+🔗 **Link para o repositório**: [GitHub - Sistema Bancário Python](https://github.com/lucassiqueiraa/DesafioSistemaBancario)

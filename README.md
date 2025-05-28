@@ -1,59 +1,93 @@
-Aqui está o README atualizado para refletir as mudanças feitas no código:  
+# 🏦 Python Banking System – OOP Version
+
+🚀 **This project** is a continuation of the DIO Python bootcamp, now refactored to use Object-Oriented Programming (OOP). The system now features a more scalable and maintainable architecture using classes, inheritance, abstraction, and polymorphism.
 
 ---
 
-# 📌 Sistema Bancário com Python  
+## 📖 Project Overview
 
-🚀 **Este projeto** faz parte da trilha de formação em Python da DIO e evoluiu para um sistema bancário mais completo e modularizado. Além das funcionalidades básicas de depósito, saque e extrato, agora o sistema permite a criação de usuários e contas bancárias, reforçando conceitos de programação estruturada e boas práticas em desenvolvimento de software.  
+This banking system simulates real-world operations and now supports:
 
-## 📖 Sobre o Projeto  
+- ✅ **Deposits** 💰  
+- ✅ **Withdrawals** 💸  
+- ✅ **Transaction history (statement)** 📜  
+- ✅ **Client registration** 👤  
+- ✅ **Bank account creation** 🏦  
+- ✅ **Listing all accounts** 📋  
 
-Este sistema bancário simula operações reais, permitindo aos usuários:  
-
-- ✅ **Depósito** 💰  
-- ✅ **Saque** 💸  
-- ✅ **Exibição de extrato** 📜  
-- ✅ **Cadastro de novos usuários** 👤  
-- ✅ **Criação de contas bancárias** 🏦  
-- ✅ **Listagem de contas criadas** 📋  
-
-Com essa evolução, o projeto agora adota uma estrutura modularizada, tornando o código mais organizado, reutilizável e escalável.  
-
-## 🛠️ Tecnologias Utilizadas  
-
-- ✔️ **Python 3**  
-- ✔️ **Uso de funções para modularização do código**  
-- ✔️ **Manipulação de listas e dicionários para armazenar usuários e contas**  
-
-## 📌 Funcionalidades  
-
-### **🏦 Operações Bancárias**  
-- **Depósito:** O usuário informa o valor e ele é adicionado ao saldo.  
-- **Saque:** O usuário pode sacar um valor respeitando as seguintes regras:  
-  - Não pode ultrapassar o saldo disponível;  
-  - Não pode exceder o limite de saque por transação;  
-  - Há um limite máximo de saques diários.  
-- **Extrato:** Exibe todas as transações realizadas e o saldo atual.  
-
-### **👥 Gestão de Usuários e Contas**  
-- **Criar Usuário:** Permite cadastrar um novo usuário no sistema utilizando CPF como identificador único.  
-- **Criar Conta Bancária:** Associa uma nova conta a um usuário existente. Cada conta pertence a uma agência fixa e possui um número único.  
-- **Listar Contas:** Exibe todas as contas criadas, mostrando agência, número da conta e titular.  
-
-## 📌 Estrutura do Código  
-
-O código agora é organizado em funções para cada operação, facilitando a manutenção e a leitura. Algumas melhorias incluem:  
-
-- **Uso de funções separadas** (`depositar()`, `sacar()`, `exibir_extrato()`, etc.).  
-- **Parâmetros posicionais e nomeados**, garantindo maior clareza na chamada das funções.  
-- **Armazenamento de usuários e contas em listas**, simulando um banco de dados simples.  
+With the transition to an OOP architecture, the code is now cleaner, more modular, and ready for further expansions such as savings accounts, credit functionality, and more.
 
 ---
 
-💡 **Boas Práticas:** Esta refatoração torna o sistema mais robusto e modularizado, sendo uma ótima base para quem deseja aprender sobre gerenciamento de transações bancárias e manipulação de dados em Python.  
+## 🧠 Key Concepts Used
 
-🔗 **Link para o repositório**: [GitHub - Sistema Bancário Python](https://github.com/lucassiqueiraa/DesafioSistemaBancario)  
+- 📦 **Encapsulation** through class attributes and methods  
+- 🧬 **Inheritance** (e.g., `PessoaFisica` extends `Cliente`)  
+- 🧩 **Polymorphism** and method overriding in `ContaCorrente`  
+- 🧱 **Abstraction** using abstract base classes (`Transacao`)  
+- 📚 **Composition** between `Conta`, `Cliente`, and `Historico`
 
 ---
 
-Esse novo README reflete as mudanças feitas no código, destacando a modularização e as novas funcionalidades. 🚀
+## 🛠️ Technologies Used
+
+- 🐍 **Python 3.x**
+- 🏗️ OOP (Object-Oriented Programming)
+- 🧪 Use of abstract base classes (`abc`)
+- 🕒 **Datetime** for transaction logging
+- 📄 CLI Interface with `textwrap`
+
+---
+
+## 📌 Main Functionalities
+
+### 💳 Banking Operations
+
+- **Deposit**  
+  - Only accepts positive amounts.
+  - Automatically updates balance and logs the transaction.
+
+- **Withdraw**  
+  - Applies daily withdrawal limits and maximum withdrawal amount.
+  - Records successful transactions.
+
+- **Statement**  
+  - Shows a list of all transactions and current balance.
+
+### 👥 Client and Account Management
+
+- **Register Client**  
+  - Requires full name, CPF, date of birth, and address.
+  - CPF must be unique.
+
+- **Open Account**  
+  - Creates a `ContaCorrente` associated with an existing client.
+  - Accounts belong to a fixed agency (`0001`) and have unique numbers.
+
+- **List Accounts**  
+  - Displays all accounts with agency number, account number, and client name.
+
+---
+
+## 🗂️ Code Structure
+
+The application is structured around the following main classes:
+
+- `Cliente` and `PessoaFisica`
+- `Conta` and `ContaCorrente`
+- `Transacao` (abstract), `Saque`, and `Deposito`
+- `Historico` to track transactions
+
+The `main()` function acts as the CLI controller, handling user interaction and coordinating system operations.
+
+---
+
+💡 **Best Practices Highlighted:**
+
+- OOP principles applied cleanly and correctly
+- Clear separation of concerns between business logic and interface
+- Scalability for future feature implementations
+
+---
+
+🔗 **Repository**: [GitHub - Python OOP Banking System](https://github.com/lucassiqueiraa/DesafioSistemaBancario)
